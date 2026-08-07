@@ -5,6 +5,7 @@ from .llama import LlamaAdapter
 from .mistral import MistralAdapter
 from .mistral_function_calling import MistralFunctionAdapter
 from .nova import NovaAdapter
+from .nvidia import NvidiaAdapter
 from .openai_compatible import OpenAICompatibleAdapter
 from .openai_oss import OpenAIAdapter
 from .qwen import QwenAdapter
@@ -19,6 +20,7 @@ __all__ = [
     "MistralFunctionAdapter",
     "ModelProviderAdapter",
     "NovaAdapter",
+    "NvidiaAdapter",
     "OpenAIAdapter",
     "OpenAICompatibleAdapter",
     "QwenAdapter",

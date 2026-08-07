@@ -23,6 +23,7 @@ The library includes built-in adapters for the following model families:
 | `QwenAdapter` | Alibaba Qwen | Native tool use |
 | `LlamaAdapter` | Meta Llama 3 / 4 | JSON extraction from text |
 | `NovaAdapter` | Amazon Nova (Converse API) | Native tool use |
+| `NvidiaAdapter` | NVIDIA Nemotron | Native tool use |
 
 Adapters are auto-selected at runtime based on the model ID you pass to `BatchInferer`.
 Other models may be supported through the default adapter, or you can write and register your own

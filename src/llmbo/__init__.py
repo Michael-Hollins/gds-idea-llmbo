@@ -5,6 +5,7 @@ from .adapters import (
     MistralAdapter,
     MistralFunctionAdapter,
     NovaAdapter,
+    NvidiaAdapter,
     OpenAIAdapter,
     QwenAdapter,
 )
@@ -30,7 +31,7 @@ ModelAdapterRegistry.register(r"(meta\.llama)", LlamaAdapter)
 ModelAdapterRegistry.register(r"openai", OpenAIAdapter)
 ModelAdapterRegistry.register(r"qwen", QwenAdapter)
 ModelAdapterRegistry.register(r"(amazon\.nova)", NovaAdapter)
-
+ModelAdapterRegistry.register(r"(nvidia|nemotron)", NvidiaAdapter)
 
 __all__ = [
     "AnthropicAdapter",
@@ -43,6 +44,7 @@ __all__ = [
     "ModelAdapterRegistry",
     "ModelInput",
     "NovaAdapter",
+    "NvidiaAdapter",
     "OpenAIAdapter",
     "QwenAdapter",
     "StructuredBatchInferer",
